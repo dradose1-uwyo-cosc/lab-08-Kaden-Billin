@@ -1,8 +1,8 @@
-# Your Name Here
+# Kaden Billin
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section:
+# 11-7-2024
+# Lab 08
+# Lab Section: 12
 # Sources, people worked with, help given to:
 # your
 # comments
@@ -14,6 +14,23 @@
 # Other wise return the converted int or float 
 # Floats should only have one decimal point in them 
 
+thing = input("Enter a string here: ")
+
+def check():
+    if (thing).lstrip("-").isdigit() == True:
+        print("True (int)")
+        print(int(thing))
+    elif "." in thing:
+        stuff = thing.split(".")
+        if stuff[0].lstrip("-").isdigit() == True and stuff[1].isdigit() == True and thing.count(".") == 1:
+            print("True (float)")
+            print(float(thing))
+        else:
+            print("False")
+    else:
+            print("False")
+
+check()
 
 print("*" * 75)
 
@@ -33,6 +50,10 @@ print("*" * 75)
 # m, b can be floats or integers
 # the bounds must be integers, if not return false
 
+def slope_intercept(m, b, xlower, xupper):
+     for all num in range(float(xlower),float(xupper)):
+        print(i)
+    return m
 # Create a while loop to prompt users for their input for the four variables
 # Exit on the word exit
 # Remember all inputs are strings, but the function needs ints or floats
